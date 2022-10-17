@@ -142,12 +142,10 @@ h2 {
     top: 5px;
     left: 15px;
 }
-  
 /* glow when you hover over index */  
 a:hover {
     background-color: gold;
 }
-  
 /* will glow green when clicked upon */
 form :active {
     color: green;
