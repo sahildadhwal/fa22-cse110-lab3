@@ -1,0 +1,199 @@
+/* Change the background color to pumpkin-oragne*/
+body {
+  background-color: hsl(30, 60%, 50%);
+  
+}
+
+/* Change the title color to a dark blue*/
+/* & the subtitle of content colors too*/
+h1,h4 {
+  color: rgb(34, 34, 191);
+  margin-left: 20px;
+  font-family: 'Lexend Tera', sans-serif;
+
+}
+
+/* Change all of the content title colors to red*/
+/* Note: the color of the date will be overridden to 
+   blue in the html file*/
+h2 {
+    color: red;
+    margin-left: 20px;
+  }
+
+
+  
+/* Give a yellow highlight box around desired text*/
+/* Specifically the date & content titles*/ 
+.box {
+    background-color: #ffff00;
+  }
+
+/* 3 unique relative units total*/
+    /* (1) vw: "1% of the viewport's width." */
+.vw {
+    width: 10vw;
+}
+    /* (2) rem: "Font size of the root element." */ 
+.rem {
+    width: 1rem;
+}
+
+    /* (3) em: Font size of the parent" */    
+.em {
+    width: 10em;
+}
+  
+/* 3 unique absolute units total */
+    /* (1) px: 200 pixels */
+.px {
+    width: 200px
+}
+    /* (2) centimeters */
+.cm {
+    width: 4cm
+}
+    
+/* (3) mm: millimeters  */
+.mm {
+    width: 60mm
+}
+
+/* Set borders around the Oct 6, 2022 */
+.p1 {
+    border-color:blueviolet;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style:ridge;
+   
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    padding-left: .5em;
+    
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px; 
+}
+.p2 {
+    border-color:red;
+    border-width: 4px;
+    border-radius: 2px;
+    border-style:dotted;
+    
+    /* Short (padding: <top> <right> <bottom> <left>) */
+    padding: 5px 5px 5px 5px;
+    /* Short (margin: <top> <right> <bottom> <left>)*/
+    margin: 5px 20px 5px 10px;
+}
+.p3 {
+    border-color:blueviolet;
+    border-width: 3px;
+    border-radius: 2px;
+    border-style:double;
+    /* Short (padding: <top> <right> <bottom> <left>) */
+    padding: 5px 5px 5px 5px;
+    /* margin:auto*/
+    margin:auto;
+}
+.p4 {
+    border-color:red;
+    border-width: 5px;
+    border-radius: 5px;
+    border-style:dashed;
+    /* Short (padding: <top> <right> <bottom> <left>) */
+    padding: 5px 5px 5px 5px;
+    /* Short (margin: <top> <right> <bottom> <left>)*/
+    margin: 5px 20px 5px 10px;   
+}
+/*Set text to blue & underline in white*/
+.under{
+    text-decoration: underline white;
+    color:lime;
+    
+    text-align: center;
+    height: 25px;
+    width: 500px;
+    
+    max-width: 150px;
+    min-width: 25px;
+
+    padding-bottom: 30px;
+}
+/* make certain contents of text a block */
+.bloc{
+    display: block;
+
+}
+/* display none for certain text */
+.non{
+    display: none;
+}
+/*make something stick to screen, such as the mp3 music*/
+.sticky {
+	position: sticky;
+	top: 20px;
+}
+/* make an abolsute postion for certian text */
+.positioned {
+    position: absolute;
+    background: rgb(228, 228, 197);
+    top: 5px;
+    left: 15px;
+}
+  
+/* glow when you hover over index */  
+a:hover {
+    background-color: gold;
+}
+  
+/* will glow green when clicked upon */
+form :active {
+    color: green;
+}
+  
+  /*https://www.w3schools.com/css/css3_flexbox.asp  */
+  /* flexbot */
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+/* https://www.w3schools.com/css/css_grid.asp */
+/* grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+
+    row-gap: 1px;
+    column-gap: 1px;
+    grid-auto-rows: 75px;
+    grid-auto-columns: 75px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* change all font */
+*{ 
+    font-family: 'Lexend Tera', sans-serif;
+}  
+menu p{
+    margin: 25px 20px 20px 20px;   
+}
