@@ -3,12 +3,55 @@
   <head>
     <title>TEAM 2 MEETING 1 NOTES</title>
     
+    <link rel="stylesheet" href="mystyle.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+
+    <style>
+
+
+        h3 {
+          color: darkred;
+          margin-bottom: 50px;
+          font-family: 'Lexend Tera', sans-serif;
+
+
+        }
+        @media only screen and (max-width: 360px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        [attribute~=myname] {
+          border: 3px solid red;
+        }
+
+
+        menu > li {
+            color: white;
+        }
+
+        div ~ p {
+          background-color: rgb(255, 166, 0);
+        }
+
+        div + p {
+            background-color: white;
+        }
+
+        p.intro {
+          background-color: limegreen;
+        }
+
+
+    </style>
+        
     <meta name="description" content="CSE 110 Lab 2 Assignment">
     <meta name="author" content="Sahil Dadhwal">
-
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
     <link href="./smile.png" rel="icon" type="image/png" />
 
   </head>
@@ -30,8 +73,10 @@
     </header>
     
     <main>
-        <h1>Team Meeting: Group Bonding Event</h1>
-        <audio controls src="./headlines.mp3"> </audio>       
+        <div class="mm">
+            <h1>Team Meeting: Group Bonding Event</h1>
+        </div>
+        <div class="sticky"> <audio controls src="./headlines.mp3"> </audio></div>
         <br>
         <img 
             src="https://media.istockphoto.com/photos/sea-of-hands-picture-id857146092?b=1&k=20&m=857146092&s=170667a&w=0&h=6LFXDhgmrAKxwIFFgt5ctdMooP_WgLlmeX6yhq7a174=" 
@@ -45,12 +90,20 @@
         
         
 
+    
+        <div class="box">
+            <h2 style="color:blue;text-align:left;"> 
+                <span class="p1">Oct </span>
+                <span class="p2">6 </span>
+                <span class="p3">, </span>
+                <span class="p4">2022 </span>
+            </h2>
+        </div>
 
-        <h2>Oct 6, 2022</h2>
 
-
-        <h2 id="attendance">Attendance</h2>
-
+        <div class="box">
+            <h2 id="attendance">Attendance</h2>
+        </div>
         <ol>
             <li><input type="checkbox">Sahil Dadhwal</li>
             <li><input type="checkbox">Nikhil Rao (Lead)</li>
@@ -65,55 +118,89 @@
             <li><input type="checkbox">Sourabh Raja-murali (TA)</li>
 
         </ol>
+          
+Circle how many attended:
+        <div class="flex-container">
+            <div style="flex-shrink: 0">1</div>
+            <div style="flex-basis: 100px">2</div>
+            <div style="flex-grow: 80">3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>  
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
 
 
-        <h2 id="agenda">Agenda</h2>
+          <p class="intro">Remember, attendance is mandatory!</p>
+
+          
+        <div class="box">
+            <h2 id="agenda">Agenda</h2>
+        </div>
 
         <menu>
-            <li>Find a team bonding activity that <strong> <em> everyone </em> </strong> is comfortable with.</li>
+            <li>Find a team bonding activity that
+                <p class="bloc" attribute="myname"><strong> <em> everyone </em> </strong></li> </p>                    
+                is comfortable with.
             <li>Capture a moment from the activity to <b> submit to Canvas.</b></li>
         </menu>
             
             
-
-        <h2 id="brainstorming">Brainstorming</h2>
-  
-        <h4>Bowling</h4>
-        <p>We can bond over a bowling night.</p>
+        <div class="box">            
+            <h2 id="brainstorming">Brainstorming</h2>
+        </div>
+            <h4>Bowling</h4>
+        <p class="under">We can bond over a bowling night.</p>
         
-        <p> <i> Pros:</i> </p>
-        <menu>
-            <li>Affordable prices.</li>
-            <li>Everyone can play.</li>
-        </menu>
+        <p class="positioned"> <i> Pros:</i> </p>
+        <p class="non">My social security is 123456789</p>
         
-        <p><i> Cons:</i> </p>
-        <menu>
-            <li>We have different scedules.</li>
-            <li>We lack transportation.</li> 
-        </menu>
+        <div class="vw">
+            <menu>
+                <li>Affordable prices.</li>
+                <li>Everyone can play.</li>
+            </menu>
+        </div>
+        
+        <p class="positioned"><i> Cons:</i> </p>
+        <div class="rem">            
+            <menu>
+                <li>We have different scedules.</li>
+                <li>We lack transportation.</li> 
+            </menu>
+        </div>
         
 
 
-        <h4>Basketball</h4>
-        <p>We can bond over a basketball scrimmage.</p>
+        <div>
+            <h4>Basketball</h4>
+        </div>
+        <p class="under">We can bond over a basketball scrimmage.</p>
         
-         <p> <i> Pros:</i> </p>
-         <menu>
-            <li>Free of cost.</li>
-            <li>Does not require mean of transportation.</li>
-        </menu>
+         <p class="positioned"> <i> Pros:</i> </p>
+         <div class="em">             
+             <menu>
+                 <li>Free of cost.</li>
+                 <li>Does not require mean of transportation.</li>
+                </menu>
+            </div>
 
 
-        <p><i> Cons:</i> </p>
-        <menu>
-            <li>Not everyone knows how to play.</li>
-            <li>Not everyone likes basketball.</li> 
-        </menu>
-
-
-        <h2 id="documentation">Documentation</h2>
-
+        <p class="positioned"><i> Cons:</i> </p>
+        <div class="cm">
+            <menu>
+                <li>Not everyone knows how to play.</li>
+                <li>Not everyone likes basketball.</li> 
+            </menu>
+        </div>
+            
+        <div class="box">
+        
+            <h2 id="documentation">Documentation</h2>    
+        </div>
         <h4>File: Exit_Button.java</h4>
             <label for="name">Name:</label>
             
@@ -140,10 +227,11 @@
         <br>
         <br>
             <p>TODO: </p>
-            <menu>
-                <li>Seek help from the professor.</li>
-            </menu>
-            
+            <div class="px">
+                <menu>
+                    <li>Seek help from the professor.</li>
+                </menu>
+            </div>
 
 
 
@@ -188,6 +276,21 @@
             <button>Submit</button>
         </form>
         <br>
+
+
+        Tic-Tac-Toe for Group Bonding:
+        <div class="grid-container">
+            <div class="grid-item">X</div>
+            <div class="grid-item">O</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item">O</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item">X</div>
+            <div class="grid-item">O</div>
+            <div class="grid-item">O</div>
+          </div>
+          
         
         <form>
             <fieldset>
